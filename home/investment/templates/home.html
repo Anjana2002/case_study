@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Investment Prediction</title>
+    </head>
+    <body>
+        <h1>Investment Prediction</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="age">Age:</label><input type="number" id="age" name="age"><br>
+            <label for="job">Job:</label><input type="text" id="job" name="job"><br>
+            <label for="marital">Marital:</label><input type="text" id="marital" name="marital"><br>
+            <label for="education">Education:</label><input type="text" id="education" name="education"><br>
+            <label for="default">Default:</label><input type="text" id="default" name="default"><br>
+            <label for="housing">Housing:</label><input type="text" id="housing" name="housing"><br>
+            <label for="loan">Loan:</label><input type="text" id="loan" name="loan"><br>
+            <label for="contact">Contact:</label><input type="text" id="contact" name="contact"><br>
+            <label for="month">Month:</label><input type="text" id="month" name="month"><br>
+            <label for="day_of_week">Day of Week:</label><input type="text" id="day_of_week" name="day_of_week"><br>
+            <label for="duration">Duration:</label><input type="number" id="duration" name="duration"><br>
+            <label for="campaign">Campaign:</label><input type="number" id="campaign" name="campaign"><br>
+            <label for="pdays">Pdays:</label><input type="number" id="pdays" name="pdays"><br>
+            <label for="previous">Previous:</label><input type="number" id="previous" name="previous"><br>
+            <label for="poutcome">Poutcome:</label><input type="text" id="poutcome" name="poutcome"><br>
+            <label for="emp_var_rate">Employment Variation Rate:</label><input type="number" step="0.01" id="emp_var_rate" name="emp_var_rate"><br>
+            <label for="cons_price_idx">Consumer Price Index:</label><input type="number" step="0.01" id="cons_price_idx" name="cons_price_idx"><br>
+            <label for="cons_conf_idx">Consumer Confidence Index:</label><input type="number" step="0.01" id="cons_conf_idx" name="cons_conf_idx"><br>
+            <label for="euribor3m">Euribor 3 Month Rate:</label><input type="number" step="0.01" id="euribor3m" name="euribor3m"><br>
+            <label for="nr_employed">Number of Employees:</label><input type="number" id="nr_employed" name="nr_employed"><br>
+            <button type="submit">Predict</button>
+
+        </form>
+    </body>
+</html>
